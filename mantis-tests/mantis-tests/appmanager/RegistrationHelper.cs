@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using NUnit.Framework;
 
-
 namespace mantis_tests
 {
     public class RegistrationHelper : HelperBase
