@@ -76,7 +76,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="appmanager\APImantisHepler.cs" />
+    <Compile Include="appmanager\APIHepler.cs" />
     <Compile Include="appmanager\ApplicationManager.cs" />
     <Compile Include="appmanager\AuthHelper.cs" />
     <Compile Include="appmanager\HelperBase.cs" />

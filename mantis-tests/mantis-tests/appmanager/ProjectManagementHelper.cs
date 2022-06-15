@@ -23,6 +23,8 @@ namespace mantis_tests
         }
         public void Remove(int index)
         {
+            manager.Navigation.GoToManageOverviewPage();
+            manager.Navigation.GoToProjectControlPage();
             InitProjectModification(index);
             SubmitRemoveProject();
             AcceptRemoveProject();
@@ -43,7 +45,7 @@ namespace mantis_tests
             driver.FindElement(By.XPath($"(//table/tbody)[1]/tr[{index + 1}]/td/a")).Click();
         }
 
-        public List<ProjectData> GetProjectList()
+        public List<ProjectData> GetProjectsList()
         {
             List<ProjectData> projectList = new List<ProjectData>();
 
